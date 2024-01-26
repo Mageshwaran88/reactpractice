@@ -1,6 +1,5 @@
-
-import { useState } from "react";
-import './TourProject.css'
+import { useEffect, useState } from "react";
+import "./TourProject.css";
 
 function TourProject() {
   const [data, setdata] = useState([
@@ -42,30 +41,38 @@ function TourProject() {
     },
   ]);
 
- 
-  const handleremove =(id)=>{
-    const filterdata = data.filter(da => da.id != id)
-    setdata(filterdata)
-  }
+  const handleremove = (id) => {
+    const filterdata = data.filter((da) => da.id != id);
+    setdata(filterdata);
+  };
 
   return (
     <div>
-      <h1>Our Tours</h1>
-      <div className="container">
-        {data.map((da) => (
-          <div className="card" key={da.id}>
-            <img src={da.image} />
-            <h2>{da.title}</h2>
-            <p>
-              {da.description}
-              <span>Read More</span>
-            </p>
-            <button onClick={()=>handleremove(da.id)} className="btn">
-              Not interested
-            </button>
+      {data.length > 0 ? 
+        <div>
+          <h1>Our Tours</h1>
+          <div className="container">
+            {data.map((da) => (
+              <div className="card" key={da.id}>
+                <img src={da.image} />
+                <h2>{da.title}</h2>
+                <p>
+                  {da.description}
+                  <span>Read More</span>
+                </p>
+                <button onClick={() => handleremove(da.id)} className="btn">
+                  Not interested
+                </button>
+              </div>
+            ))}
           </div>
-        ))} 
-      </div>
+        </div>
+       : 
+       <div>
+         <h1>No Tours Left</h1>
+        <button className="refreshbtn">Refresh</button>
+       </div>
+      }
     </div>
   );
 }

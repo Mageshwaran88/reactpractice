@@ -4,8 +4,9 @@
 }
 .container{
     display: grid;
-    grid-template-columns: auto
-    auto auto;  
+    grid-gap: 190px ;
+    grid-template-columns: repeat(auto-fill,
+    minmax(186px,1fr))
 }
 h1{
     text-align: center;
@@ -50,4 +51,16 @@ span{
     color: white;
     background-color: #10B981;
 }
-
+.refreshbtn{
+    color: white;
+    background-color: #10B981;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 15px;
+    display: flex;
+    margin: 20px 620px;
+}
+.refreshbtn:hover{
+    background-color: #096848;
+    cursor: pointer;
+}
