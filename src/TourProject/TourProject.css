@@ -15,8 +15,7 @@ h1{
 .card{
     width: 350px;
     height: 600px;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin: 40px 35px 40px 35px;
     box-shadow: 1px 1px 5px grey;
 }
 img{
@@ -56,7 +55,6 @@ span{
     border: none;
     border-radius: 3px;
     padding: 6px 15px;
-    display: flex;
     margin: 20px 620px;
 }
 .refreshbtn:hover{
