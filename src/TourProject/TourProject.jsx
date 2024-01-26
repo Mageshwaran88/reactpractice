@@ -45,10 +45,11 @@ function TourProject() {
     const filterdata = data.filter((da) => da.id != id);
     setdata(filterdata);
   };
+  
 
   return (
     <div>
-      {data.length > 0 ? 
+      {data.length > 0 ?  
         <div>
           <h1 className="myhead">Our Tours</h1>
           <div className="container">
