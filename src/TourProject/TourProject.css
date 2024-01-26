@@ -3,10 +3,9 @@
     margin: 0%;
 }
 .container{
-    display: grid;
-    grid-gap: 190px ;
-    grid-template-columns: repeat(auto-fill,
-    minmax(186px,1fr))
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
 }
 h1{
     text-align: center;
