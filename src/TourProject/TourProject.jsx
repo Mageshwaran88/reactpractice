@@ -50,7 +50,7 @@ function TourProject() {
     <div>
       {data.length > 0 ? 
         <div>
-          <h1>Our Tours</h1>
+          <h1 className="myhead">Our Tours</h1>
           <div className="container">
             {data.map((da) => (
               <div className="card" key={da.id}>
@@ -68,9 +68,11 @@ function TourProject() {
           </div>
         </div>
        : 
-       <div>
-         <h1>No Tours Left</h1>
+       <div className="refreshpage">
+         <div>
+          <h1 className="rehead">No Tours Left</h1>
         <button className="refreshbtn">Refresh</button>
+         </div>
        </div>
       }
     </div>

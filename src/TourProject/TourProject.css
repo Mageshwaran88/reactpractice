@@ -7,7 +7,7 @@
    justify-content: space-around;
    flex-wrap: wrap;
 }
-h1{
+.myhead{
     text-align: center;
     font-size: 40px;
     padding-top: 50px;
@@ -49,15 +49,28 @@ span{
     color: white;
     background-color: #10B981;
 }
+.refreshpage{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   flex-direction: column;
+}
+.rehead{
+    font-size: 40px;
+    font-weight: 900;
+}
 .refreshbtn{
     color: white;
     background-color: #10B981;
     border: none;
     border-radius: 3px;
-    padding: 6px 15px;
-    margin: 20px 620px;
+    padding: 8px 16px;
+    margin: 10px 75px;
 }
 .refreshbtn:hover{
     background-color: #096848;
     cursor: pointer;
 }
+
+
