@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import "./Reacthook.css";
-import icon from "../../src/assets/"
+import icon from "../../src/assets/3177440.png"
 import { useForm } from 'react-hook-form';
 import {yupResolver} from "@hookform/resolvers/yup";
 import * as yup from 'yup';
+import { ReactHooKSubmit } from './ReactHooKSubmit';
 
 const Schema = yup.
 object().
@@ -56,7 +57,7 @@ export const ReactHookForm = () => {
            <button onClick={handleSubmit(onsubmit)}>Login</button>
         </form>
         </div>
-        </div> : ""
+        </div> : <ReactHooKSubmit/>
         }
     </div>
   )

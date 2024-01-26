@@ -6,19 +6,20 @@
 }
 img{
     width: 100px;
-    margin: 10px 100px;
+    margin: -20px 100px 0px 100px;
 }
 .mypage{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     background:linear-gradient(to right,seagreen,aqua) ;
 }
 .container{
     background-color: white;
     padding: 50px 40px;
     border-radius: 5px;
+    margin: 20px 0px;
 }
 h1{
     text-align: center;
@@ -28,7 +29,6 @@ p{
     color: red;
     font-size: 15px;
     line-height: 30px;
-    cursor: pointer;
 }
 label{
     line-height: 40px;
